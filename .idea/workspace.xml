@@ -2,13 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e3ee79a7-5d95-400d-a743-0f2994627e0e" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/Internship_Project.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/1a4f3e89-4d3c-4c5d-85c0-a4a049f96f56.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/1a4f3e89-4d3c-4c5d-85c0-a4a049f96f56/storage_v2/_src_/schema/main.uQUzAA.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.name" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.name" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Internship_Project.py" beforeDir="false" afterPath="$PROJECT_DIR$/Internship_Project.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -164,7 +160,9 @@
       <workItem from="1642950322254" duration="802000" />
       <workItem from="1643468634251" duration="989000" />
       <workItem from="1643472682070" duration="25611000" />
-      <workItem from="1643808140010" duration="20197000" />
+      <workItem from="1643808140010" duration="20553000" />
+      <workItem from="1643838602213" duration="39000" />
+      <workItem from="1643900154889" duration="726000" />
     </task>
     <servers />
   </component>

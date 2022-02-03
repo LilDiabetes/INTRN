@@ -1,4 +1,4 @@
-from flask import Flask, jsonify, request
+from flask import Flask, jsonify, request, redirect
 from werkzeug.security import generate_password_hash, check_password_hash
 from flask_sqlalchemy import SQLAlchemy
 from flask_restful import Resource, Api, reqparse, fields, marshal_with
@@ -53,7 +53,9 @@ class PostModel(db.Model):
     def __repr__(self):
         return '<Post %r>' % self.account_name
 
-
+class Home(Resource):
+    def get(self):
+        return redirect('https://github.com/LilDiabetes/LilDiabetes')
 
 
 userParser = reqparse.RequestParser()
@@ -128,6 +130,7 @@ class Register(Resource):
         return {"msg": "Account was succesfully created"}, 201
 
 
+
 class User(Resource):
     @marshal_with(resource_fields)
     @jwt_required()
@@ -141,7 +144,7 @@ class User(Resource):
     @jwt_required()
     def post(self, user_id):
         args = userParser.parse_args()
-        # password = generate_password_hash(args["password"])
+        password = generate_password_hash(args["password"])
         user = UserModel(email=args["email"], password=args["password"])
         db.session.add(user)
         db.session.commit()
@@ -171,6 +174,7 @@ class User(Resource):
 
 
 api.add_resource(User, '/user/<int:user_id>')
+api.add_resource(Home, '/')
 api.add_resource(Post, '/post/<int:post_id>')
 api.add_resource(Auth, '/login')
 api.add_resource(Register, '/register')
