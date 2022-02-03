@@ -1,0 +1,1 @@
+web: gunicorn Internship_Project:app
