@@ -3,6 +3,7 @@ from werkzeug.security import generate_password_hash, check_password_hash
 from flask_sqlalchemy import SQLAlchemy
 from flask_restful import Resource, Api, reqparse, fields, marshal_with
 from flask_jwt_extended import create_access_token, JWTManager, get_jwt_identity, jwt_required
+# import logger
 
 app = Flask(__name__)
 api = Api(app)
